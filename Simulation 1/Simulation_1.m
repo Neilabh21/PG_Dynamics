@@ -23,7 +23,7 @@ end
 % Plotting x vs t
 figure(1);
 answerx = F * int(xint, t, 0, t) / m;   % Evaluating the second integral
-fplot(answerx, [-2, 2]);                % Plotting the required function
+fplot(answerx, [0, 1]);                % Plotting the required function
 title('$$x_t = \frac{F}{m} \int\displaylimits_0^t \left( \int\displaylimits_0^t sin(A t^2) dt \right) dt$$','interpreter','latex')
 xlabel('t');
 ylabel('x_t');
@@ -32,7 +32,7 @@ print('1. x vs t.jpg','-djpeg');
 % Plotting y vs t
 figure(2);
 answery = F * int(yint, t, 0, t) / m;   % Evaluating the second integral
-fplot(answery, [-2, 2]);                % Plotting the required function
+fplot(answery, [0, 1]);                % Plotting the required function
 title('$$y_t = \frac{F}{m} \int\displaylimits_0^t \left( \int\displaylimits_0^t cos(A t^2) dt \right) dt$$','interpreter','latex')
 xlabel('t');
 ylabel('y_t');
@@ -40,8 +40,16 @@ print('2. y vs t.jpg','-djpeg');
 
 % Plotting x vs y
 figure(3);
-fplot(answerx, answery);
+fplot(answerx, answery, [0, 1]);
 title('Trajectory');
 xlabel('x');
 ylabel('y');
 print('3. x vs y.jpg','-djpeg');
+
+% Plotting x vs y
+figure(4);
+fplot(answerx, answery, [0, 10]);
+title('Trajectory');
+xlabel('x');
+ylabel('y');
+print('4. x vs y zoomed out.jpg','-djpeg');
