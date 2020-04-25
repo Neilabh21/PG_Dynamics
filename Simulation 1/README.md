@@ -15,4 +15,4 @@ Final Equations:
 
 Calculations:
 
-![Calculations](https://github.com/Neilabh21/PG_Dynamics/edit/master/Simulation%201/Calculations.jpg)
+![Calculations](https://github.com/Neilabh21/PG_Dynamics/blob/master/Simulation%201/Calculations.jpg "Calculations")
