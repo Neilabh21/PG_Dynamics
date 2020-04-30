@@ -1,6 +1,6 @@
 # Simulation 1
 
-#### Problem - To simulate the trajectory of the center of a free cylinder in the horixontal plane acted upon on one end by a force F of constand magnitude and in the direction perpendicular to the axis at all times
+#### Problem - To simulate the trajectory of the center of a free cylinder in the horixontal plane acted upon on one end by a force F of constant magnitude and in the direction perpendicular to the axis at all times
 
 Assumed Values -
 - F = 10 N
